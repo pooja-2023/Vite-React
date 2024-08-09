@@ -31,16 +31,24 @@
 //     </>
 //   )
 // }
+
+// export default App
+
 import React from 'react';
-import ListItem from './ListItem';
-const App=()=>{
-  const list =['cat','dog','cow','chicken','sheep','horse'];
+import Joke from './Joke';
+
+
+const App=() => {
+  const list = ['Why are snails slow? Because they’re carrying a house on their back.',
+    'What’s the smartest insect? A spelling bee!',
+    'How does the ocean say hi? It waves!',
+    'What is a room with no walls? A mushroom',
+    'How did Benjamin Franklin feel holding his kite when he discovered electricity? Shocked!'];
   return(
     <div>
-      <h1>Animals List</h1>
-      <ListItem items ={list}/>
+    <h1>Jokes</h1>
+      <Joke items = {list}/>
     </div>
   )
-
 }
 export default App;
